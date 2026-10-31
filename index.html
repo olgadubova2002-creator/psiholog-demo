@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{компания}} · частный психолог</title>
+<meta name="description" content="Частный психолог в {{город}} и онлайн: 50 минут, цена названа заранее, первая встреча объяснена по шагам, можно начать с короткого созвона.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="{{компания}} · частный психолог">
+<meta property="og:title" content="Психолог в {{город}} и онлайн: с чем вы пришли?">
+<meta property="og:description" content="50 минут, цена названа заранее, начать можно с короткого созвона. Онлайн и очно.">
+<meta property="og:url" content="{{ссылка-сайта}}">
+<meta property="og:image" content="{{ссылка-сайта}}/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="assets/hero-m.webp" media="(max-width: 860px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/hero.webp" media="(min-width: 861px)" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%274%27 y=%274%27 width=%2724%27 height=%2724%27 rx=%276%27 fill=%27%239c5a45%27/%3E%3Crect x=%2711%27 y=%2714%27 width=%2710%27 height=%274%27 rx=%272%27 fill=%27%23f4efe8%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vibe.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"{{компания}}","description":"Частный психолог: индивидуальные и парные консультации, онлайн и очно.","url":"{{ссылка-сайта}}","image":"{{ссылка-сайта}}/assets/og.jpg","telephone":"{{телефон}}","openingHours":"{{часы}}","address":{"@type":"PostalAddress","streetAddress":"{{адрес}}","addressLocality":"{{город}}","addressCountry":"RU"},"priceRange":"от 3500 ₽"}
+</script>
+<style>
+  /* ---- тема: тёплая бумага, терракота, две гарнитуры (направление владельца, см. DESIGN.md) ---- */
+  .v-page {
+    --v-canvas: #f4efe8; --v-surface: #fbf8f3;
+    --v-ink: #2a2623; --v-ink-soft: #6b625a;            /* вторичный текст 5,2:1 на холсте */
+    --v-accent: #9c5a45; --v-accent-ink: #fbf3ec;       /* глина, только для действий: кнопка 4,8:1, на бумаге 4,6:1 */
+    --v-info: #4d6a5e;                                  /* шалфей для информации (цены, шкала, номера): 5,2:1 на бумаге, 5,6:1 на поверхности */
+    --v-font-display: "Cormorant Garamond", "Georgia", serif;
+    --v-font-text: "Onest", "Segoe UI", system-ui, sans-serif;
+    --v-display-weight: 500;
+    --v-track-tight: -0.015em;
+    --v-shadow-color: 70 40 26;
+    --v-e1: 0 1px 2px rgb(var(--v-shadow-color) / .06), 0 8px 22px rgb(var(--v-shadow-color) / .08);
+    --v-e2: 0 2px 6px rgb(var(--v-shadow-color) / .08), 0 22px 54px rgb(var(--v-shadow-color) / .14);
+    --v-radius: 18px;
+    --v-t-xs: clamp(0.8125rem, 0.79rem + 0.15vw, 0.85rem);
+    --v-t-sm: clamp(0.9375rem, 0.9rem + 0.2vw, 1rem);
+    --v-section: clamp(3.5rem, 8vw, 7rem);
+  }
+  html, body { margin: 0; background: #f4efe8; }
+  .v-page .v-lede { font-weight: 400; }
+  .v-page .v-display { font-weight: 500; }
+  /* кнопка 10 px, выбор формата 8 px, форма 18 px: радиус показывает роль, а не «таблетки» везде; подписи обычным регистром */
+  .v-page .v-btn { border-radius: 10px; font-size: var(--v-t-sm); }
+  .v-page .v-label { text-transform: none; letter-spacing: 0; font-size: var(--v-t-sm); font-weight: 400; }
+
+  /* ---- шапка ------------------------------------------------------------------- */
+  .bar { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; justify-content: space-between; gap: var(--v-4);
+    padding: var(--v-3) var(--v-gutter);
+    background: rgb(244 239 232 / 0); transition: background-color .3s var(--v-ease-out), box-shadow .3s var(--v-ease-out); }
+  .bar.is-scrolled { background: rgb(244 239 232 / .88); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--v-hair); }
+  .bar__mark { font-family: var(--v-font-display); font-weight: 600; font-size: 1.55rem; letter-spacing: -0.01em; text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; white-space: nowrap; }
+  .qnav { display: flex; gap: var(--v-5); font-size: var(--v-t-sm); }
+  .qnav a { text-decoration: none; color: var(--v-ink-soft); display: inline-flex; align-items: center; min-height: 44px; transition: color .16s var(--v-ease-out); }
+  @media (hover: hover) and (pointer: fine) { .qnav a:hover { color: var(--v-ink); } }
+  .bar__right { display: flex; align-items: center; gap: var(--v-4); }
+  .bar__tel { text-decoration: none; font-weight: 500; font-size: var(--v-t-sm); color: var(--v-ink); display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--v-2); white-space: nowrap; }
+  .bar .v-btn { padding: .7em 1.3em; }
+  @media (max-width: 1100px) { .qnav { display: none; } }
+  @media (max-width: 700px) {
+    .bar__tel { display: none; }
+    .bar__mark { font-size: 1.3rem; }
+    .bar .v-btn { padding: 0 1em; min-height: 44px; }
+  }
+
+  /* ---- 1 · hero ---------------------------------------------------------------- */
+  .hero__back img { position: absolute; max-width: none; width: 112%; height: 112%; left: -6%; top: -6%; object-fit: cover; object-position: 62% 50%; }
+  .hero__col { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: linear-gradient(to right, rgb(244 239 232 / .86) 0%, rgb(244 239 232 / .55) 34%, transparent 62%); }
+  .hero__copy { bottom: clamp(3.2rem, 9vh, 6.5rem); max-width: min(46rem, 88vw); }
+  .hero__label { display: block; margin-bottom: var(--v-4); }
+  .hero__copy .v-display { font-size: clamp(2.5rem, 1.4rem + 3.6vw, 4.9rem); line-height: .98; max-width: 14ch; }
+  .hero__copy .v-lede { margin-top: var(--v-5); max-width: 36ch; color: var(--v-ink); }
+  .v-page .facts { display: flex; flex-wrap: wrap; margin-top: var(--v-5); font-size: var(--v-t-sm); }
+  .facts li { padding: .15em 1.1em .15em 0; margin-right: 1.1em; border-right: 1px solid var(--v-hair-strong); }
+  .facts li:last-child { border-right: 0; margin-right: 0; padding-right: 0; }
+  .facts b { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .demo-tag { color: var(--v-ink-soft); }
+  /* пометка демо: обычная строка текста, не плашка */
+  .demo-note { grid-column: 1 / -1; font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: none; }
+  .demo-note b { font-weight: 600; color: var(--v-ink); }
+  .hero__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); margin-top: var(--v-6); }
+  .hero__tel { text-decoration: none; font-size: var(--v-t-sm); display: inline-flex; align-items: center; min-height: 44px; gap: .35em; }
+  .hero__tel b { font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; }
+  .hero__note { position: absolute; z-index: 3; right: var(--v-gutter); top: clamp(5rem, 14vh, 9rem); text-align: right; display: grid; gap: .25em; max-width: 24ch; }
+  .hero__note span:last-child { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .hero__two { bottom: clamp(4.5rem, 14vh, 9rem); max-width: min(38rem, 88vw); }
+  .hero__two .v-display { font-size: var(--v-t-3xl); line-height: 1; max-width: 13ch; }
+  .hero__two .v-lede { margin-top: var(--v-4); max-width: 34ch; }
+  @media (max-width: 860px) {
+    .hero__back img { object-position: 50% 80%; }
+    .hero__col { background: linear-gradient(to bottom, rgb(244 239 232 / .82) 0%, rgb(244 239 232 / .45) 48%, transparent 72%); }
+    .hero__copy, .hero__two { bottom: auto; top: clamp(5rem, 10vh, 6.5rem); }
+    .hero__copy .v-display { font-size: clamp(2.1rem, 1.4rem + 3.8vw, 3rem); max-width: none; }
+    .hero__copy .v-lede { font-size: var(--v-t-base); margin-top: var(--v-3); max-width: 30ch; }
+    .facts { margin-top: var(--v-4); }
+    .hero__cta { margin-top: var(--v-4); gap: var(--v-2) var(--v-5); }
+    .hero__note { display: none; }
+    .hero__two .v-display { font-size: var(--v-t-2xl); }
+  }
+
+  /* ---- 1а · форматы работы ----------------------------------------------------- */
+  .usl { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--v-8) var(--v-9); align-items: start; }
+  .usl__head { display: grid; gap: var(--v-4); }
+  .usl__head p { color: var(--v-ink-soft); max-width: 34ch; }
+  .usl__list { list-style: none; margin: 0; padding: 0; }
+  .usl__list li { display: grid; grid-template-columns: 1fr auto; gap: .35rem var(--v-5); padding: var(--v-5) 0; border-top: 1px solid var(--v-hair-strong); transition: padding-left .25s var(--v-ease-out); }
+  .usl__list li:last-child { border-bottom: 1px solid var(--v-hair-strong); }
+  .usl__list h3 { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-xl); line-height: 1.1; }
+  .usl__list p { grid-column: 1; color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 44ch; }
+  .usl__list .sum { grid-column: 2; grid-row: 1 / span 2; align-self: center; color: var(--v-info); font-weight: 600; white-space: nowrap; }
+  @media (hover: hover) and (pointer: fine) { .usl__list li:hover { padding-left: var(--v-3); } }
+  .usl__foot { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--v-4) var(--v-6); }
+  .usl__foot p { max-width: 52ch; color: var(--v-ink-soft); }
+  @media (max-width: 860px) { .usl { grid-template-columns: 1fr; gap: var(--v-6); } }
+
+  /* ---- 2 · с чем работаю: крупные фразы клиента, асимметрично ------------------ */
+  .says { display: grid; gap: var(--v-2); }
+  .says__head { display: grid; gap: var(--v-4); max-width: 46rem; margin-bottom: var(--v-7); }
+  .says__head p { color: var(--v-ink-soft); max-width: 42ch; }
+  .says__list { display: flex; flex-direction: column; gap: .1em; font-family: var(--v-font-display); font-weight: 500; font-size: clamp(1.9rem, 1.2rem + 3.6vw, 4.2rem); line-height: 1.08; letter-spacing: -0.01em; }
+  .says__list li { display: block; margin-left: 0; color: var(--v-ink); transition: color .3s var(--v-ease-out), transform .3s var(--v-ease-out); }
+  .says__list li:nth-child(2) { margin-left: 8%; }
+  .says__list li:nth-child(3) { margin-left: 3%; }
+  .says__list li:nth-child(4) { margin-left: 14%; }
+  .says__list li:nth-child(5) { margin-left: 5%; }
+  .says__list li:nth-child(6) { margin-left: 18%; }
+  @media (hover: hover) and (pointer: fine) { .says__list li:hover { color: var(--v-info); transform: translateX(8px); } }
+  .says__foot { margin-top: var(--v-7); max-width: 52ch; color: var(--v-ink-soft); }
+  @media (max-width: 700px) { .says__list li:nth-child(n) { margin-left: 0; } }
+
+  /* ---- 3 · первая встреча ------------------------------------------------------ */
+  .first { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--v-8) var(--v-9); align-items: start; }
+  .first__fig { position: sticky; top: 5.5rem; overflow: hidden; border-radius: var(--v-radius); box-shadow: var(--v-e2); aspect-ratio: 3 / 4; max-height: 82svh; }
+  .first__fig .v-layer { inset: 0; }
+  .first__fig img { position: absolute; max-width: none; width: 100%; height: 118%; left: 0; top: -9%; object-fit: cover; }
+  .first__body { display: grid; gap: var(--v-6); }
+  .first__body > p { color: var(--v-ink-soft); max-width: 44ch; }
+  .steps { list-style: none; margin: var(--v-2) 0 0; padding: 0; position: relative; counter-reset: s; }
+  .steps::before { content: ""; position: absolute; left: .95rem; top: .6rem; bottom: .6rem; width: 1px; background: var(--v-hair-strong); }
+  .steps li { position: relative; padding: 0 0 var(--v-5) 3rem; counter-increment: s; }
+  .steps li::before { content: counter(s); position: absolute; left: 0; top: 0; width: 1.9rem; height: 1.9rem; border-radius: 50%; background: var(--v-surface); box-shadow: inset 0 0 0 1px var(--v-hair-strong); display: grid; place-items: center; font-weight: 600; font-size: var(--v-t-xs); color: var(--v-info); }
+  .steps h3 { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-lg); line-height: 1.15; }
+  .steps p { color: var(--v-ink-soft); font-size: var(--v-t-sm); margin-top: .2rem; max-width: 40ch; }
+  .prep { display: grid; gap: var(--v-3); padding: var(--v-5); border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-e1); }
+  .prep h3 { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-lg); }
+  .prep ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .55rem; font-size: var(--v-t-sm); }
+  .prep li { display: flex; gap: .6em; align-items: baseline; }
+  .prep li::before { content: "–"; flex: none; color: var(--v-info); }
+  @media (max-width: 860px) { .first { grid-template-columns: 1fr; gap: var(--v-6); } .first__fig { position: static; max-height: 60svh; } }
+
+  /* ---- 4 · шкала сессии (50 минут): единственный «громкий» момент страницы ----- */
+  .ses__head { position: absolute; z-index: 3; left: var(--v-gutter); top: clamp(5rem, 13vh, 8rem); max-width: min(32rem, 86vw); }
+  .ses__head .v-display { font-size: var(--v-t-3xl); line-height: 1; }
+  .ses__rep { left: var(--v-gutter); bottom: clamp(3.2rem, 11vh, 7rem); max-width: min(30rem, 86vw); }
+  .ses__rep .min { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-lg); color: var(--v-info); display: block; margin-bottom: .25rem; }
+  .ses__rep h3 { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-2xl); line-height: 1.02; }
+  .ses__rep p { margin-top: var(--v-3); color: var(--v-ink-soft); max-width: 36ch; }
+  .dial { position: absolute; z-index: 2; right: calc(var(--v-gutter) + 2vw); top: 50%; width: min(42vw, 66svh, 30rem); aspect-ratio: 1; transform: translateY(-48%); }
+  .dial svg { width: 100%; height: 100%; display: block; overflow: visible; }
+  .dial__track { fill: none; stroke: var(--v-hair-strong); stroke-width: 2; }
+  .dial__run { fill: none; stroke: var(--v-info); stroke-width: 6; stroke-linecap: round; transform: rotate(-90deg); transform-origin: 200px 200px; stroke-dasharray: 1068.14; stroke-dashoffset: 1068.14; }
+  .dial__dot { fill: var(--v-canvas); stroke: var(--v-hair-strong); stroke-width: 2; transition: fill .3s var(--v-ease-out), stroke .3s var(--v-ease-out); }
+  .dial__dot.is-on { fill: var(--v-info); stroke: var(--v-info); }
+  .dial__mid { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; }
+  .dial__num { font-family: var(--v-font-display); font-weight: 500; font-size: clamp(4rem, 4rem + 4vw, 8rem); line-height: .9; font-variant-numeric: tabular-nums; }
+  .dial__cap { font-size: var(--v-t-sm); color: var(--v-ink-soft); margin-top: 1.1rem; }
+  @media (max-width: 860px) {
+    .dial { right: 50%; left: auto; top: 6.5rem; width: min(64vw, 36svh); transform: translateX(50%); }
+    .ses__head { display: none; }
+    .ses__rep { bottom: clamp(2.5rem, 7vh, 4rem); left: var(--v-gutter); right: var(--v-gutter); max-width: none; }
+    .ses__rep h3 { font-size: var(--v-t-xl); }
+  }
+
+  /* ---- 5 · условия: оплата, отмена, конфиденциальность + пакет (цены встреч выше, в форматах) ---- */
+  .terms { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: var(--v-7) var(--v-9); align-items: end; }
+  .terms__main { display: grid; gap: var(--v-6); }
+  .terms h2 { max-width: 16ch; }
+  .terms__list { list-style: none; margin: 0; padding: 0; font-family: var(--v-font-display); font-size: var(--v-t-xl); line-height: 1.15; }
+  .terms__list li { padding: var(--v-4) 0; border-top: 1px solid var(--v-hair-strong); }
+  .terms__list li:last-child { border-bottom: 1px solid var(--v-hair-strong); }
+  .terms__list small { display: block; margin-top: .35rem; font-family: var(--v-font-text); font-size: var(--v-t-sm); color: var(--v-ink-soft); line-height: 1.5; max-width: 46ch; }
+  .pack { display: grid; gap: var(--v-2); padding-bottom: var(--v-4); }
+  .pack h3 { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-lg); }
+  .pack .sum { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-3xl); line-height: 1; color: var(--v-info); font-variant-numeric: lining-nums; }
+  .pack p { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 28ch; }
+  @media (max-width: 860px) { .terms { grid-template-columns: 1fr; gap: var(--v-5); } }
+
+  /* ---- 6 · обо мне ------------------------------------------------------------- */
+  .about { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: var(--v-7) var(--v-9); align-items: center; }
+  .about__fig { overflow: hidden; border-radius: var(--v-radius); box-shadow: var(--v-e2); aspect-ratio: 3 / 4; max-height: 80svh; }
+  .about__fig img { width: 100%; height: 100%; object-fit: cover; }
+  .about__body { display: grid; gap: var(--v-5); }
+  .about__body > p { color: var(--v-ink-soft); max-width: 44ch; }
+  .about__list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--v-3); font-size: var(--v-t-sm); max-width: 46ch; }
+  .about__list li { display: grid; grid-template-columns: 8.5rem 1fr; gap: var(--v-3); padding-top: var(--v-3); border-top: 1px solid var(--v-hair-strong); }
+  .about__list b { font-weight: 500; color: var(--v-ink-soft); }
+  @media (max-width: 860px) { .about { grid-template-columns: 1fr; } .about__fig { max-height: 62svh; } .about__list li { grid-template-columns: 1fr; gap: .1rem; } }
+
+  /* ---- 7 · запись: финал с формой, держит реплику ------------------------------ */
+  .close__back img { position: absolute; max-width: none; width: 112%; height: 112%; left: -6%; top: -6%; object-fit: cover; object-position: 62% 50%; }
+  .close__col { position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(to right, rgb(244 239 232 / .92) 0%, rgb(244 239 232 / .7) 40%, transparent 70%); }
+  .close { position: absolute; z-index: 3; inset: 0; display: flex; flex-direction: column; justify-content: space-between; padding: clamp(5rem, 11vh, 7rem) var(--v-gutter) 0; }
+  .close__inner { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: var(--v-6) var(--v-9); align-items: end; flex: 1; padding-bottom: var(--v-6); }
+  .close__inner h2 { font-size: var(--v-t-3xl); line-height: 1; max-width: 13ch; }
+  .close__inner > div > p { margin-top: var(--v-4); max-width: 38ch; }
+  .form { display: grid; gap: var(--v-3); padding: var(--v-5); border-radius: var(--v-radius); background: rgb(251 248 243 / .92); box-shadow: var(--v-e2); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); max-width: 28rem; }
+  .form label { display: grid; gap: .3rem; font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .form input[type=text] { font: inherit; font-size: var(--v-t-sm); color: var(--v-ink); padding: .8em 1em; border-radius: 10px; border: 0; background: var(--v-canvas); box-shadow: inset 0 0 0 1px var(--v-hair-strong); min-height: 48px; }
+  .form input[type=text]::placeholder { color: #6f665e; }
+  .form input[type=text]:focus-visible { outline: 2px solid var(--v-accent); outline-offset: 1px; }
+  .fmt { display: flex; flex-wrap: wrap; gap: var(--v-2); }
+  .fmt label { display: block; font-size: var(--v-t-sm); color: var(--v-ink); }
+  .fmt input { position: absolute; opacity: 0; pointer-events: none; }
+  .fmt span { display: inline-flex; align-items: center; min-height: 44px; padding: 0 1.1em; border-radius: 8px; box-shadow: inset 0 0 0 1px var(--v-hair-strong); cursor: pointer; white-space: nowrap; transition: background-color .16s var(--v-ease-out), color .16s var(--v-ease-out); }
+  .fmt input:checked + span { background: var(--v-ink); color: var(--v-canvas); box-shadow: none; }
+  .fmt input:focus-visible + span { outline: 2px solid var(--v-accent); outline-offset: 2px; }
+  .v-page .form button.v-btn { justify-content: center; border: 0; font-family: inherit; cursor: pointer; min-height: 52px; background: var(--v-accent); color: var(--v-accent-ink); }
+  .form__note { font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  .form__err { display: none; font-size: var(--v-t-sm); color: var(--v-accent); }
+  .form.has-error .form__err { display: block; }
+  .form__ok { display: none; font-size: var(--v-t-sm); color: var(--v-info); }
+  .form.is-sent .form__ok { display: block; }
+  .close__meta { display: grid; gap: .15rem; margin-top: var(--v-5); font-size: var(--v-t-sm); }
+  .close__tel { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-xl); text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; }
+  .foot { display: flex; flex-wrap: wrap; gap: .3rem var(--v-6); padding: var(--v-4) 0 var(--v-5); border-top: 1px solid var(--v-hair-strong); font-size: var(--v-t-xs); color: var(--v-ink-soft); background: rgb(244 239 232 / .86); margin: 0 calc(var(--v-gutter) * -1); padding-inline: var(--v-gutter); }
+  .foot__warn { flex-basis: 100%; }
+  @media (max-width: 860px) {
+    .close { padding-top: 4.5rem; overflow-y: auto; }
+    .close__col { background: linear-gradient(to bottom, rgb(244 239 232 / .9) 0%, rgb(244 239 232 / .75) 60%, rgb(244 239 232 / .5) 100%); }
+    .close__inner { grid-template-columns: 1fr; align-items: start; gap: var(--v-4); }
+    .close__inner h2 { font-size: var(--v-t-2xl); }
+    .close__inner > div > p { display: none; }
+    .close__meta { margin-top: var(--v-3); }
+    .close__meta span:nth-of-type(2) { display: none; }
+    .form { padding: var(--v-4); gap: var(--v-2); }
+    .form__note { font-size: .72rem; line-height: 1.35; }
+    .foot { font-size: .72rem; padding-block: var(--v-2); }
+  }
+</style>
+</head>
+<body>
+<div class="v-page">
+  <span data-v-progress></span>
+
+  <header class="bar">
+    <a class="bar__mark" href="#top">{{компания}}</a>
+    <nav class="qnav" aria-label="Разделы">
+      <a href="#uslugi">Услуги</a>
+      <a href="#zaprosy">С&nbsp;чем работаю</a>
+      <a href="#vstrecha">Первая встреча</a>
+      <a href="#cena">Условия</a>
+      <a href="#obo-mne">Обо мне</a>
+    </nav>
+    <div class="bar__right">
+      <a class="bar__tel" href="tel:{{телефон}}">{{телефон}}</a>
+      <a class="v-btn" href="{{ссылка-записи}}" target="_blank" rel="noopener">Записаться</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 1 · УЗНАВАНИЕ: запрос клиента, а не регалии; цена и формат видны сразу; кнопка над сгибом -->
+    <section id="top" data-v-act="pin" data-v-span="2.0" data-v-drift="#f4efe8" aria-label="Частный психолог {{компания}}">
+      <div data-v-stage>
+        <div class="v-layer hero__back" data-v-parallax="-0.45">
+          <picture>
+            <source media="(max-width: 860px)" srcset="assets/hero-m.webp">
+            <img src="assets/hero.webp" alt="Кабинет психолога: два кресла, столик со стаканом воды, окно с дневным светом, растение в глиняном горшке" width="1920" height="1080" fetchpriority="high">
+          </picture>
+        </div>
+        <div class="hero__col" aria-hidden="true"></div>
+
+        <div class="hero__note" data-v-cue="0 0.6 0" data-v-rise="0">
+          <span class="v-label">Приём по записи</span>
+          <span>{{часы}}</span>
+          <span>Онлайн и&nbsp;очно в&nbsp;{{город}}</span>
+        </div>
+
+        <div class="v-copy v-copy--lead hero__copy" data-v-cue="0 0.62 0 0.1">
+          <span class="v-label hero__label">Частный психолог {{имя}}</span>
+          <h1 class="v-display v-display--xl" data-v-kinetic="lines">Психолог в&nbsp;{{город}} и&nbsp;онлайн: с&nbsp;чем вы пришли?</h1>
+          <p class="v-lede">50&nbsp;минут, цена названа заранее, начать можно с&nbsp;короткого созвона.</p>
+          <ul class="facts" aria-label="Формат и цена">
+            <li><b>50&nbsp;минут</b></li>
+            <li>онлайн и&nbsp;очно</li>
+            <li>от <b>3&nbsp;500&nbsp;₽</b> <span class="demo-tag">(демо-цена)</span></li>
+          </ul>
+          <div class="hero__cta">
+            <a class="v-btn" href="{{ссылка-записи}}" target="_blank" rel="noopener">Записаться</a>
+            <a class="hero__tel" href="tel:{{телефон}}">или позвоните <b>{{телефон}}</b></a>
+          </div>
+        </div>
+
+        <div class="v-copy v-copy--lead hero__two" data-v-cue="0.64 0.96 0.06 0.04">
+          <h2 class="v-display v-display--lg">Не знаете, как сформулировать запрос?</h2>
+          <p class="v-lede">Это нормально: на&nbsp;первой встрече сформулируем его вместе, никуда не&nbsp;торопясь.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1а · ВЫБОР: форматы работы сразу после первого экрана; здесь же цены встреч -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#fbf8f3" id="uslugi" aria-label="Форматы работы">
+      <div class="v-wrap usl">
+        <div class="usl__head" data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--lg">Как мы можем работать</h2>
+          <p>Онлайн по&nbsp;видеосвязи или очно в&nbsp;кабинете. Формат выбираем под вас, цена в&nbsp;каждом пункте указана заранее.</p>
+        </div>
+        <ol class="usl__list" data-v-in data-v-stagger="55">
+          <li><h3>Индивидуальные консультации</h3><p>Разовая встреча или регулярная работа: тревога, выбор, самооценка, усталость, потеря.</p><span class="sum v-nums">от 3&nbsp;500&nbsp;₽</span></li>
+          <li><h3>Парные консультации</h3><p>Для двоих: разговоры, которые заходят в&nbsp;тупик, кризис, решение «остаёмся или нет».</p><span class="sum v-nums">от 4&nbsp;500&nbsp;₽</span></li>
+          <li><h3>Короткий созвон 15&nbsp;минут</h3><p>Познакомиться, задать вопросы и&nbsp;понять, подходим ли&nbsp;друг другу. Бесплатно.</p><span class="sum v-nums">0&nbsp;₽</span></li>
+          <li data-slot-optional><h3>Подростки и&nbsp;родители</h3><p>{{формат-подростки}}</p><span class="sum v-nums">{{цена-подростки}}</span></li>
+        </ol>
+        <p class="demo-note"><b>Демо:</b> цены примерные, в&nbsp;рабочем сайте их подставит специалист.</p>
+        <div class="usl__foot" data-v-in data-v-in-self>
+          <p>Не&nbsp;уверены, какой формат вам нужен? Начните с&nbsp;короткого созвона: это ни&nbsp;к&nbsp;чему не&nbsp;обязывает.</p>
+          <a class="v-btn v-btn--ghost" href="{{ссылка-записи}}" target="_blank" rel="noopener">Записаться</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · ЗАПРОСЫ: «с чем работаю» словами клиента -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#f4efe8" id="zaprosy" aria-label="С чем работаю">
+      <div class="v-wrap says">
+        <div class="says__head" data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--md">С&nbsp;такими фразами обычно приходят</h2>
+          <p>Если нашли свою, значит, вы по&nbsp;адресу. Если нет, это тоже нормально: расскажете своими словами.</p>
+        </div>
+        <ul class="says__list" data-v-in data-v-stagger="90">
+          <li>«Не&nbsp;могу решиться»</li>
+          <li>«Устаю от&nbsp;отношений»</li>
+          <li>«Тревожно, а&nbsp;причины нет»</li>
+          <li>«Всё делаю, а&nbsp;сил нет»</li>
+          <li>«После расставания не&nbsp;прихожу в&nbsp;себя»</li>
+          <li>«Не&nbsp;понимаю, чего хочу»</li>
+        </ul>
+        <p class="says__foot" data-v-in data-v-in-self>Работаю в&nbsp;{{подход}}. Подробности о&nbsp;методе расскажу на&nbsp;первой встрече, когда станет понятно, что подойдёт именно вам.</p>
+      </div>
+    </section>
+
+    <!-- 3 · ПЕРВАЯ ВСТРЕЧА: пять шагов (это настоящая последовательность) и как подготовиться -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#fbf8f3" id="vstrecha" aria-label="Как проходит первая встреча">
+      <div class="v-wrap first">
+        <figure class="first__fig" data-v-reveal="left" data-v-reveal-at="0.1 0.5">
+          <div class="v-layer" data-v-parallax="-0.35">
+            <img src="assets/cabinet.webp" alt="Кресло терракотового цвета, столик со стаканом воды и салфетками, окно с мягким светом" width="1200" height="1600" loading="lazy" decoding="async">
+          </div>
+        </figure>
+        <div class="first__body">
+          <div class="v-stack" data-v-in data-v-stagger="70">
+            <h2 class="v-display v-display--lg">Как проходит первая встреча</h2>
+          </div>
+          <ol class="steps" data-v-in data-v-stagger="80">
+            <li><h3>Знакомство и&nbsp;договорённости</h3><p>Как мы будем работать, что остаётся между нами, как переносить и&nbsp;отменять встречи.</p></li>
+            <li><h3>Ваш запрос</h3><p>Рассказываете, что привело. Можно сумбурно, можно по&nbsp;пунктам, можно молчать, пока подбираются слова.</p></li>
+            <li><h3>Как мы будем работать</h3><p>Объясняю, что вижу в&nbsp;вашем запросе и&nbsp;какой может быть работа. Вы решаете, подходит&nbsp;ли вам.</p></li>
+            <li><h3>Итог встречи</h3><p>Проговариваем, что было важного и&nbsp;что вы забираете с&nbsp;собой.</p></li>
+            <li><h3>Следующий шаг</h3><p>Договариваемся о&nbsp;следующей встрече или о&nbsp;паузе. Без давления и&nbsp;без обязательств.</p></li>
+          </ol>
+          <div class="prep" data-v-in data-v-in-self>
+            <h3>Как подготовиться</h3>
+            <ul>
+              <li>Ничего готовить не&nbsp;нужно, достаточно прийти как есть</li>
+              <li>Для онлайн: тихое место, наушники и&nbsp;50&nbsp;минут без отвлечений</li>
+              <li>По&nbsp;желанию: запишите, что хотите обсудить в&nbsp;первую очередь</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · ФИРМЕННЫЙ ХОД «шкала сессии»: скролл ведёт 50 минут встречи (единственное «громкое» движение страницы) -->
+    <section id="seans" data-v-act="pin" data-v-span="3.2" data-v-drift="#f4efe8" aria-label="50 минут сессии по шагам">
+      <div data-v-stage>
+        <div class="ses__head" data-v-cue="0 1 0 0">
+          <h2 class="v-display v-display--lg">Что происходит за&nbsp;50&nbsp;минут</h2>
+        </div>
+
+        <div class="dial" id="dial" aria-hidden="true">
+          <svg viewBox="0 0 400 400">
+            <circle class="dial__track" cx="200" cy="200" r="170"/>
+            <circle class="dial__run" id="dial-run" cx="200" cy="200" r="170"/>
+            <circle class="dial__dot" data-i="0" cx="200" cy="30" r="9"/>
+            <circle class="dial__dot" data-i="1" cx="299.9" cy="62.5" r="9"/>
+            <circle class="dial__dot" data-i="2" cx="299.9" cy="337.5" r="9"/>
+            <circle class="dial__dot" data-i="3" cx="38.3" cy="147.5" r="9"/>
+            <circle class="dial__dot" data-i="4" cx="137.4" cy="41.9" r="9"/>
+          </svg>
+          <div class="dial__mid">
+            <span class="dial__num v-nums" id="dial-num">0</span>
+            <span class="dial__cap">минут из&nbsp;50</span>
+          </div>
+        </div>
+
+        <div class="v-copy ses__rep" data-v-cue="0 0.2 0 0.06">
+          <span class="min">0–5 минут</span><h3>Договорённости</h3>
+          <p>Напоминаю правила: конфиденциальность, время, перенос. Спрашиваю, как вы сейчас.</p>
+        </div>
+        <div class="v-copy ses__rep" data-v-cue="0.22 0.4 0.06 0.06">
+          <span class="min">5–20 минут</span><h3>Ваш запрос</h3>
+          <p>Вы рассказываете, что привело. Я слушаю и&nbsp;уточняю только то, что поможет понять вас точнее.</p>
+        </div>
+        <div class="v-copy ses__rep" data-v-cue="0.42 0.6 0.06 0.06">
+          <span class="min">20–40 минут</span><h3>Работа с&nbsp;запросом</h3>
+          <p>Разбираем главное: что происходит, что держит, что можно изменить. Темп задаёте вы.</p>
+        </div>
+        <div class="v-copy ses__rep" data-v-cue="0.6 0.76 0.06 0.06">
+          <span class="min">40–47 минут</span><h3>Итог</h3>
+          <p>Собираем встречу в&nbsp;несколько ясных мыслей, которые можно взять с&nbsp;собой.</p>
+        </div>
+        <div class="v-copy ses__rep" data-v-cue="0.76 0.98 0.06 0.02">
+          <span class="min">47–50 минут</span><h3>Следующий шаг</h3>
+          <p>Договариваемся о&nbsp;следующей встрече или о&nbsp;паузе. Решение всегда остаётся за&nbsp;вами.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · УСЛОВИЯ: оплата, отмена, конфиденциальность и пакет (цены встреч уже в «Форматах») -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#fbf8f3" id="cena" aria-label="Оплата и условия">
+      <div class="v-wrap terms">
+        <div class="terms__main" data-v-in data-v-stagger="80">
+          <h2 class="v-display v-display--lg">Оплата, отмена, конфиденциальность</h2>
+          <ul class="terms__list">
+            <li>Оплата до&nbsp;встречи<small>Она фиксирует время за&nbsp;вами. Цены форматов указаны выше.</small></li>
+            <li>Перенос и&nbsp;отмена не&nbsp;позднее чем за&nbsp;24&nbsp;часа</li>
+            <li>Конфиденциальность<small>Всё, что вы рассказываете, остаётся между нами. Подробности: {{политика}}.</small></li>
+          </ul>
+        </div>
+        <aside class="pack" data-v-in data-v-in-self>
+          <h3>Пакет из&nbsp;четырёх встреч</h3>
+          <span class="sum">13&nbsp;000&nbsp;₽</span>
+          <p>Для регулярной работы. Действует два месяца.</p>
+        </aside>
+        <p class="demo-note"><b>Демо:</b> пакет, срок действия и&nbsp;правила отмены примерные, их задаёт специалист.</p>
+      </div>
+    </section>
+
+    <!-- 6 · ОБО МНЕ: образование и подход после запроса и условий -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#f4efe8" id="obo-mne" aria-label="Обо мне">
+      <div class="v-wrap about">
+        <figure class="about__fig" data-v-reveal="right" data-v-reveal-at="0.1 0.5">
+          <img src="assets/psy.webp" alt="Психолог в оттенках овсянки сидит в кресле в своём кабинете и спокойно смотрит в камеру" width="1200" height="1600" loading="lazy" decoding="async">
+        </figure>
+        <div class="about__body">
+          <div class="v-stack" data-v-in data-v-stagger="70">
+            <h2 class="v-display v-display--lg">Меня зовут {{имя}}</h2>
+            <p>Работаю с&nbsp;взрослыми и&nbsp;парами. Объясняю, что делаю и&nbsp;зачем, вопросы можно задавать в&nbsp;любой момент.</p>
+          </div>
+          <ul class="about__list" data-v-in data-v-stagger="80">
+            <li><b>Образование</b><span>{{образование}}</span></li>
+            <li><b>Подход</b><span>{{подход}}</span></li>
+            <li><b>Опыт</b><span>{{стаж}}</span></li>
+            <li><b>Этика</b><span>{{этика}}</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 · ДЕЙСТВИЕ: запись; финал держит реплику, футер внутри сцены -->
+    <section data-v-act="pin" data-v-span="1.5" data-v-drift="#f4efe8" id="zapis" aria-label="Запись на консультацию">
+      <div data-v-stage>
+        <div class="v-layer close__back" data-v-parallax="-0.3">
+          <img src="assets/final.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+        </div>
+        <div class="close__col" aria-hidden="true"></div>
+        <div class="close">
+          <div class="close__inner">
+            <div data-v-cue="0.04">
+              <h2 class="v-display v-display--xl">Напишите, когда вам удобно</h2>
+              <p>Оставьте имя и&nbsp;способ связи. Отвечу в&nbsp;часы приёма, предложу время и&nbsp;отвечу на&nbsp;вопросы до&nbsp;встречи.</p>
+              <div class="close__meta">
+                <a class="close__tel" href="tel:{{телефон}}">{{телефон}}</a>
+                <span><b>{{адрес}}</b>, {{город}}</span>
+                <span>{{часы}}, приём по&nbsp;записи</span>
+              </div>
+            </div>
+            <form class="form" id="form" data-v-cue="0.1" novalidate>
+              <label>Как к&nbsp;вам обращаться
+                <input type="text" name="name" autocomplete="given-name" placeholder="Имя" required>
+              </label>
+              <label>Как с&nbsp;вами связаться
+                <input type="text" name="contact" autocomplete="off" placeholder="Телефон или Telegram" required>
+              </label>
+              <div class="fmt" role="radiogroup" aria-label="Формат">
+                <label><input type="radio" name="fmt" value="онлайн" checked><span>Онлайн</span></label>
+                <label><input type="radio" name="fmt" value="очно"><span>Очно</span></label>
+                <label><input type="radio" name="fmt" value="созвон"><span>Созвон 15&nbsp;минут</span></label>
+              </div>
+              <button class="v-btn" type="submit" data-v-magnet="0.22" data-v-rise="0">Записаться</button>
+              <span class="form__note">Нажимая кнопку, вы соглашаетесь на&nbsp;обработку данных. Конфиденциальность: {{политика}}.</span>
+              <span class="form__err" role="alert">Укажите имя и&nbsp;способ связи, чтобы можно было ответить.</span>
+              <span class="form__ok" role="status">Это демо: в&nbsp;рабочем сайте заявка уйдёт в&nbsp;мессенджер {{ссылка-записи}}.</span>
+            </form>
+          </div>
+          <footer class="foot">
+            <span>{{компания}} · частный психолог · {{город}}</span>
+            <span data-slot-optional>{{юрлицо}} · ИНН {{ИНН}}</span>
+            <span class="foot__warn">Консультация психолога не&nbsp;заменяет медицинскую и&nbsp;экстренную помощь. В&nbsp;острой кризисной ситуации обратитесь на&nbsp;горячую линию {{горячая-линия}} или в&nbsp;скорую помощь.</span>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="vibe.js"></script>
+<script>
+  // На телефоне пины короче: data-v-span из CSS не поменять, правим атрибут до монтирования.
+  if (window.matchMedia('(max-width: 860px)').matches) {
+    document.getElementById('top').setAttribute('data-v-span', '1.7');
+    document.getElementById('seans').setAttribute('data-v-span', '2.8');
+    document.getElementById('zapis').setAttribute('data-v-span', '1.1');
+  }
+  Vibe.mount(document.querySelector('.v-page'));
+
+  // Шапка: подложка после 40 px прокрутки, чтобы текст секций не просвечивал.
+  (function () {
+    var bar = document.querySelector('.bar'), on = null;
+    function tick() { var s = window.scrollY > 40; if (s !== on) { on = s; bar.classList.toggle('is-scrolled', s); } }
+    window.addEventListener('scroll', tick, { passive: true }); tick();
+  })();
+
+  // Шкала сессии. Минута ведётся от --v-p акта кусочно-линейно: окна реплик (0.2 / 0.4 / 0.6 / 0.8)
+  // совпадают с рубежами встречи (5 / 20 / 40 / 47 минут из 50). Круг дорисовывается, число набегает, точка этапа загорается.
+  (function () {
+    var act = document.getElementById('seans'), run = document.getElementById('dial-run'), num = document.getElementById('dial-num');
+    if (!act || !run || !num) return;
+    var dots = document.querySelectorAll('.dial__dot'), C = 1068.14;
+    var P = [0, .2, .4, .6, .8, 1], M = [0, 5, 20, 40, 47, 50];
+    function minutes(p) {
+      for (var i = 1; i < P.length; i++) if (p <= P[i]) return M[i - 1] + (M[i] - M[i - 1]) * (p - P[i - 1]) / (P[i] - P[i - 1]);
+      return 50;
+    }
+    var live = false, lastP = -1;
+    function tick() {
+      var p = parseFloat(getComputedStyle(act).getPropertyValue('--v-p')) || 0;
+      if (p !== lastP) {
+        lastP = p;
+        var m = minutes(p);
+        run.style.strokeDashoffset = (C * (1 - m / 50)).toFixed(1);
+        num.textContent = Math.round(m);
+        var s = p < .2 ? 0 : p < .4 ? 1 : p < .6 ? 2 : p < .8 ? 3 : 4;
+        for (var i = 0; i < dots.length; i++) dots[i].classList.toggle('is-on', i <= s);
+      }
+      if (live) requestAnimationFrame(tick);
+    }
+    new IntersectionObserver(function (es) { live = es[0].isIntersecting; if (live) tick(); }).observe(act);
+    tick();
+  })();
+
+  // Форма: в демо заявка никуда не уходит. Пустая форма показывает ошибку, заполненная показывает подтверждение.
+  // В рабочем сайте submit открывает {{ссылка-записи}} с текстом заявки.
+  (function () {
+    var f = document.getElementById('form'); if (!f) return;
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var ok = f.elements['name'].value.trim() && f.elements['contact'].value.trim();
+      f.classList.toggle('has-error', !ok);
+      f.classList.toggle('is-sent', !!ok);
+    });
+  })();
+</script>
+</body>
+</html>
